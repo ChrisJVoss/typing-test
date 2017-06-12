@@ -10,6 +10,15 @@
   padding-top: 75px;
 }
 
-b {
+.bold {
   font-size: 125%;
+  font-weight: bold;
+}
+
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
 }
