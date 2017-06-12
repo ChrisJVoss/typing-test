@@ -9,3 +9,16 @@
 #typeBox {
   padding-top: 75px;
 }
+
+.bold {
+  font-size: 125%;
+  font-weight: bold;
+}
+
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
+}
