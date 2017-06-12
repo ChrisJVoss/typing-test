@@ -7,7 +7,7 @@ var $span = document.querySelector('#text')
 for (var i = 0; i < splitText.length; i++) {
   var $text = document.createElement('span')
   $text.textContent = splitText[i]
-  $text.className = ('character')
+  $text.className = 'character'
   $span.appendChild($text)
 }
 
