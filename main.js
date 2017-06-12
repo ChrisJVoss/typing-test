@@ -48,11 +48,21 @@ document.addEventListener('keydown', function(event) {
   else {
     if (document.querySelectorAll('div.score').length === 0) {
       var $correct = document.querySelectorAll('span.correct')
-      var score = ($correct.length /  $textList.length) * 100
+      var score = (Math.round(($correct.length /  $textList.length) * 100).toFixed(2))
       var $score = document.createElement('div')
       $score.className = 'score'
       $score.textContent = 'Your score is ' + score + '%!'
       document.body.appendChild($score)
+      var $retryBox = document.createElement('div')
+      var $retry = document.createElement('input')
+      $retryBox.className = 'refresh'
+      $retry.className = 'retry'
+      $retry.setAttribute('type', 'button')
+      $retry.setAttribute('value', 'Try Again!')
+      $retry.setAttribute('onClick', 'window.location.reload()')
+      document.body.appendChild($retryBox)
+      $retryBox.appendChild($retry)
+
     }
   }
 })

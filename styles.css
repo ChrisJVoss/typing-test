@@ -36,3 +36,15 @@
   color: rebeccapurple;
   font-size: 26px;
 }
+
+.refresh {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.retry {
+  font-size: 20px;
+}
