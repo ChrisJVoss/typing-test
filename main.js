@@ -7,11 +7,11 @@ var $span = document.querySelector('#text')
 for (var i = 0; i < splitText.length; i++) {
   var $text = document.createElement('span')
   $text.textContent = splitText[i]
-  $text.className = ('id')
+  $text.className = ('character')
   $span.appendChild($text)
 }
 
-var $textList = document.querySelectorAll('span.id')
+var $textList = document.querySelectorAll('span.character')
 var i = 0
 
 document.addEventListener('DOMContentLoaded', function() {
