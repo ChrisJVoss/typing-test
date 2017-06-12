@@ -1,7 +1,17 @@
 /* eslint-disable no-unused-vars */
 
-var text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-var splitText = text.split('')
+function getRandomInt(min, max) {
+  min = Math.ceil(min)
+  max = Math.floor(max)
+  return Math.floor(Math.random() * (max - min)) + min
+}
+
+var text = ["Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "Duis feugiat, urna non pretium porta, velit nunc sagittis velit.",
+  "Pellentesque ut magna non dolor viverra porta.", "Vivamus quis sem in est molestie suscipit.", "Vestibulum iaculis viverra scelerisque."]
+
+var x = getRandomInt(0, text.length)
+
+var splitText = text[x].split('')
 var $span = document.querySelector('#text')
 
 for (var i = 0; i < splitText.length; i++) {
