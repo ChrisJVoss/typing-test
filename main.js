@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 
-var text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+var text = "Lorem ipsum."
 var splitText = text.split('')
 var $span = document.querySelector('#text')
 
@@ -19,8 +19,18 @@ document.addEventListener('DOMContentLoaded', function() {
 })
 
 document.addEventListener('keydown', function(event) {
-  if (i < $textList.length) {
+  if (event.keyCode === 16) {
+    return false
+  }
+  if (i < $textList.length - 1) {
     $textList[i + 1].classList.toggle('bold')
   }
+  if (event.key === $textList[i].textContent) {
+    $textList[i].classList.toggle('correct')
+  }
+  else if (event.key !== $textList[i].textContent) {
+    $textList[i].classList.toggle('incorrect')
+  }
+  $textList[i].classList.toggle('bold')
   i += 1
 })
