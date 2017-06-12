@@ -22,3 +22,13 @@
 .incorrect {
   color: red;
 }
+
+.score {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  text-align: center;
+  color: rebeccapurple;
+  font-size: 24px;
+}
