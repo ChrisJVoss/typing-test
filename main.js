@@ -7,18 +7,16 @@ var $span = document.querySelector('#text')
 for (var i = 0; i < splitText.length; i++) {
   var $text = document.createElement('span')
   $text.textContent = splitText[i]
-  $text.className = ('id')
+  $text.className = 'character'
   $span.appendChild($text)
 }
 
-var $textList = document.querySelectorAll('span.id')
+var $textList = document.querySelectorAll('span.character')
 var i = 0
 
 document.addEventListener('DOMContentLoaded', function() {
   $textList[0].classList.toggle('bold')
 })
-
-var $correct = document.querySelectorAll('span.correct')
 
 document.addEventListener('keydown', function(event) {
   if (event.keyCode === 16) {
